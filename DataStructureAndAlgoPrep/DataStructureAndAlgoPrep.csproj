@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Week1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Week1\" />
+  </ItemGroup>
+</Project>
