@@ -7,9 +7,9 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new DigitPalindrome();
+            var test = new NumberOf1BIts();
 
-            var res = test.IsPalindrome(10);
+            var res = test.HammingWeight(00000000000000000000000000001011);
         }
     }
 }
