@@ -43,7 +43,7 @@ namespace DataStructureAndAlgoPrep.Week1
             for  (int i = 1; i < intervalList.Count; ++i)
             {
                 var currentMeeting = intervalList[i];
-                if (!(currentMeeting.Start >= previousMeeting.Start && currentMeeting.Start <= previousMeeting.End))
+                if (currentMeeting.Start >= previousMeeting.Start)
                 {
                     return false;
                 }
