@@ -23,7 +23,7 @@ namespace DataStructureAndAlgoPrep.Week1
 				dp[i] = dp[i - 1] + dp[i - 2];
 			}
 
-			return dp[n - 1];
+			return dp[n];
         }
 
 		public int ClimbStairsHelper(int currentStep, int finalStep)
@@ -38,7 +38,7 @@ namespace DataStructureAndAlgoPrep.Week1
 				return 1;
 			}
 
-			return ClimbStairs(1 + currentStep, finalStep) + ClimbStairs(2 + currentStep, finalStep);
+			return ClimbStairsHelper(1 + currentStep, finalStep) + ClimbStairsHelper(2 + currentStep, finalStep);
         }
 	}
 }
