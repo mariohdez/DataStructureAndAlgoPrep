@@ -7,21 +7,12 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new ReverseLinkedListSln();
+            var test = new CanAttendMeetingsSln();
+            var meeetings = new int[2][];
+            meeetings[0] = new int[2] { 7, 10 };
+            meeetings[1] = new int[2] { 2, 4 };
 
-            var one = new ListNode(1);
-            var two = new ListNode(2);
-            var three = new ListNode(3);
-            var four = new ListNode(4);
-            var five = new ListNode(5);
-
-            one.next = two;
-            two.next = three;
-            three.next = four;
-            four.next = five;
-            five.next = null;
-
-            var sln = test.ReverseList(one);
+            var sln = test.CanAttendMeetings(meeetings);
 
             System.Console.WriteLine(sln);
         }
