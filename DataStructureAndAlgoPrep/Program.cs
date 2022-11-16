@@ -7,12 +7,14 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new CanAttendMeetingsSln();
-            var meeetings = new int[2][];
-            meeetings[0] = new int[2] { 7, 10 };
-            meeetings[1] = new int[2] { 2, 4 };
+            var test = new RomanToIntSln();
 
-            var sln = test.CanAttendMeetings(meeetings);
+            var sln = test.RomanToInt("MCMXCIV");
+
+            if (sln != 1994)
+            {
+                throw new Exception("blah");
+            }
 
             System.Console.WriteLine(sln);
         }
