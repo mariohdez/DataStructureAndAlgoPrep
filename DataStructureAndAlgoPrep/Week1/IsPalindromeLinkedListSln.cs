@@ -37,8 +37,6 @@ namespace DataStructureAndAlgoPrep.Week1
                 tempHead2 = tempHead2.next;
             }
 
-
-
             var undoneReversalHead = reverseLinkedList(reversedSecondHalfHead);
 
             endOfFirstHalf.next = undoneReversalHead;
