@@ -7,14 +7,21 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new RomanToIntSln();
+            var test = new IsPalindromeLinkedListSln();
 
-            var sln = test.RomanToInt("MCMXCIV");
+            var secondOne = new ListNode(1);
+            var secondTwo= new ListNode(2);
+            var three = new ListNode(3);
+            var firstTwo = new ListNode(2);
+            var head = new ListNode(1);
 
-            if (sln != 1994)
-            {
-                throw new Exception("blah");
-            }
+            head.next = firstTwo;
+            firstTwo.next = three;
+            three.next = secondTwo;
+            secondTwo.next = secondOne;
+
+
+            var sln = test.IsPalindrome(head);
 
             System.Console.WriteLine(sln);
         }
