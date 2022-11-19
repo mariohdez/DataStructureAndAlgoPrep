@@ -1,28 +1,30 @@
 ﻿using System;
 namespace DataStructureAndAlgoPrep.Week1
 {
-	public class IsSubtreeSln
-	{
+    public class IsSubtreeSln
+    {
         public bool IsSubtree(TreeNode root, TreeNode subRoot)
         {
-            if (root == null || subRoot == null)
+            if (subRoot == null) return true;
+
+            if (root == null)
             {
-                return root == subRoot; // edge case of both being null to return true.
+                return false;
             }
 
-            var currentRootIsSame = IsSameTree(root, subRoot);
+            if (IsSameTree(root, subRoot))
+            {
+                return true;
+            }
 
-            return currentRootIsSame || IsSameTree(root.left, subRoot.left) || IsSameTree(root.right, subRoot.right);
+            return IsSubtree(root.left, subRoot) || IsSubtree(root.right, subRoot);
         }
 
         public bool IsSameTree(TreeNode root1, TreeNode root2)
         {
-            if (root1 == null && root2 == null) return true;
+            if (root1 == null || root2 == null) return root1 == root2;
 
-            if (root1 != null && root2 != null && root1.val == root2.val)
-                return IsSameTree(root1.left, root2.left) && IsSameTree(root1.right, root2.right);
-
-            return false;
+            return root1.val == root2.val && IsSameTree(root1.left, root2.left) && IsSameTree(root1.right, root2.right);
         }
     }
 }

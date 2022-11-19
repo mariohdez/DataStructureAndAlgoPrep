@@ -7,7 +7,7 @@ namespace DataStructureAndAlgoPrep.Week1
         {
             int[] answer = new int[nums.Length];
             var leftPtr = 0;
-            var rightPtr = nums.Length;
+            var rightPtr = nums.Length - 1;
             var answerPtr = nums.Length - 1;
 
             while (leftPtr <= rightPtr)
