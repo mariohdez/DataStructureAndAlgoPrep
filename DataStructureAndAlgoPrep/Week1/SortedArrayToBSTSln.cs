@@ -19,10 +19,7 @@ namespace DataStructureAndAlgoPrep.Week1
 
             var mid = ((right - left) / 2) + left;
 
-            var root = new TreeNode()
-            {
-                val = nums[mid],
-            };
+            var root = new TreeNode(nums[mid]);
 
             root.left = BuildBST(nums, left, mid - 1);
             root.right = BuildBST(nums, mid+1, right);
