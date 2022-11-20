@@ -7,11 +7,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new InsertIntervalSln();
-            // intervals = [[1,3],[6,9]], newInterval = [2,5]
-            var intervals = new int[2][] {  new int[2] { 1,3 }, new int[2] { 6, 9 } };
-            var newInterval = new int[2] { 2, 5 };
-            var sln = test.Insert(intervals, newInterval);
+            var test = new KClosestSln();
+            
+            var points = new int[2][] {  new int[2] { 1,3 }, new int[2] { -2, 2 } };
+            var sln = test.KClosest(points,1);
 
             System.Console.WriteLine(sln);
         }
