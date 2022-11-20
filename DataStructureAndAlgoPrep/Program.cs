@@ -7,10 +7,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new SortedSquaresSln();
-            var nums = new int[] { -4, -1, 0, 3, 10 };
-
-            var sln = test.SortedSquares(nums);
+            var test = new InsertIntervalSln();
+            // intervals = [[1,3],[6,9]], newInterval = [2,5]
+            var intervals = new int[2][] {  new int[2] { 1,3 }, new int[2] { 6, 9 } };
+            var newInterval = new int[2] { 2, 5 };
+            var sln = test.Insert(intervals, newInterval);
 
             System.Console.WriteLine(sln);
         }
