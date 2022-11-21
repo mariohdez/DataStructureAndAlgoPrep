@@ -8,10 +8,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new ThreeSumSln();
+            var test = new EvalRevPolNotSln();
             
-            var nums = new int[] { -1, 0, 1, 2, -1, -4 };
-            var sln = test.ThreeSum(nums);
+            var tokens = new string[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
+            var sln = test.EvalRPN(tokens);
 
             System.Console.WriteLine(sln);
         }
