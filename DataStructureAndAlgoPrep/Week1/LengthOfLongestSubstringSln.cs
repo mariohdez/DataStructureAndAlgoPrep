@@ -11,13 +11,16 @@ namespace DataStructureAndAlgoPrep.Week1
 
             int longest = 0;
             int len = s.Length;
-            Dictionary<char,int> characterToCount = new Dictionary<char, int>();
+            Dictionary<char, int> characterToCount = new Dictionary<char, int>();
             int left = 0;
             int right = 0;
 
             while (left < len)
             {
                 char charAtRight = s[right];
+
+                if (!characterToCount.ContainsKey(charAtRight)) characterToCount[charAtRight] = 0;
+
                 characterToCount[charAtRight] += 1;
 
                 while (characterToCount[charAtRight] > 1)

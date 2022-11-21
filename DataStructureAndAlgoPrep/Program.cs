@@ -1,5 +1,6 @@
 ﻿using System;
 using DataStructureAndAlgoPrep.Week1;
+using DataStructureAndAlgoPrep.Week2;
 
 namespace DataStructureAndAlgoPrep
 {
@@ -7,10 +8,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new KClosestSln();
+            var test = new ThreeSumSln();
             
-            var points = new int[2][] {  new int[2] { 1,3 }, new int[2] { -2, 2 } };
-            var sln = test.KClosest(points,1);
+            var nums = new int[] { -1, 0, 1, 2, -1, -4 };
+            var sln = test.ThreeSum(nums);
 
             System.Console.WriteLine(sln);
         }
