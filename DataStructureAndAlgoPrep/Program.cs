@@ -8,9 +8,9 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new Trie();
+            var test = new ProductOfArrayExceptSelfSln();
 
-            test.Insert("apple");
+            test.ProductExceptSelfLinearMemoryComplexity(new int[] { 1, 2, 3, 4 });
         }
     }
 }
