@@ -24,7 +24,7 @@ namespace DataStructureAndAlgoPrep.Week2
 
             for (int i = 0; i < grid.Length; ++i)
             {
-                for (int j = 0; j < grid.Length; ++j)
+                for (int j = 0; j < grid[0].Length; ++j)
                 {
                     if (grid[i][j] == 2)
                     {
