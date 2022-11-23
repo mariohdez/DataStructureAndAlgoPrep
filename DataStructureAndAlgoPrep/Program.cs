@@ -8,17 +8,12 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-
-            TreeNode root = new TreeNode(2);
-            TreeNode left = new TreeNode(1);
-            TreeNode right = new TreeNode(3);
-
-            root.left = left;
-            root.right = right;
-
-            var test = new IsValidBinarySearchTreeSln();
-
-            test.IsValidBST(root);
+            var test = new OrangesRottingSln();
+            var grid = new int[1][]
+            {
+                new int[2]{ 0,1 },
+            };
+            test.OrangesRotting(grid);
         }
     }
 }
