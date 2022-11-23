@@ -8,9 +8,17 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new ProductOfArrayExceptSelfSln();
 
-            test.ProductExceptSelfLinearMemoryComplexity(new int[] { 1, 2, 3, 4 });
+            TreeNode root = new TreeNode(2);
+            TreeNode left = new TreeNode(1);
+            TreeNode right = new TreeNode(3);
+
+            root.left = left;
+            root.right = right;
+
+            var test = new IsValidBinarySearchTreeSln();
+
+            test.IsValidBST(root);
         }
     }
 }
