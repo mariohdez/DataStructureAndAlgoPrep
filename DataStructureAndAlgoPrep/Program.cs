@@ -1,6 +1,7 @@
 ﻿using System;
 using DataStructureAndAlgoPrep.Week1;
 using DataStructureAndAlgoPrep.Week2;
+using DataStructureAndAlgoPrep.Week3;
 
 namespace DataStructureAndAlgoPrep
 {
@@ -8,7 +9,7 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new MergeSln();
+            var test = new MyAtoiSln();
             var intervals = new int[4][]
             {
                 new int[2]{ 1,3 },
@@ -16,7 +17,7 @@ namespace DataStructureAndAlgoPrep
                 new int[2]{ 8,10 },
                 new int[2]{ 15,18 },
             };
-            test.Merge(intervals);
+            test.MyAtoi("");
         }
     }
 }

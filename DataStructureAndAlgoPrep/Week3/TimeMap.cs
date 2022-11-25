@@ -21,7 +21,7 @@ namespace DataStructureAndAlgoPrep.Week3
             }
 
             valueTimeList = this.keyToValueTimeMap[key];
-            valueTimeList.Add(new(timestamp, value));
+            valueTimeList.Add(new Tuple<int, string>(timestamp, value));
         }
 
         public string Get(string key, int timestamp)
