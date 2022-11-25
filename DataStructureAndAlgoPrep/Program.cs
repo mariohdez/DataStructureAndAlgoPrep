@@ -8,12 +8,15 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new OrangesRottingSln();
-            var grid = new int[1][]
+            var test = new MergeSln();
+            var intervals = new int[4][]
             {
-                new int[2]{ 0,1 },
+                new int[2]{ 1,3 },
+                new int[2]{ 2,6 },
+                new int[2]{ 8,10 },
+                new int[2]{ 15,18 },
             };
-            test.OrangesRotting(grid);
+            test.Merge(intervals);
         }
     }
 }
