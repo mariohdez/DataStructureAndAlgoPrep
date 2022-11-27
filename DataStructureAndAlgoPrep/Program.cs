@@ -9,15 +9,9 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new MyAtoiSln();
-            var intervals = new int[4][]
-            {
-                new int[2]{ 1,3 },
-                new int[2]{ 2,6 },
-                new int[2]{ 8,10 },
-                new int[2]{ 15,18 },
-            };
-            test.MyAtoi("");
+            var test = new SortColorsSln();
+            var colros = new int[] { 2,0,2,1,1,0, };
+            test.SortColors(colros);
         }
     }
 }
