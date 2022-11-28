@@ -16,7 +16,11 @@ namespace DataStructureAndAlgoPrep.Week3
 
         public void backtracking(int[] nums, int currentIndex, LinkedList<int> currentSubset)
         {
-            if (currentIndex >= nums.Length) this.answer.Add(new List<int>(currentSubset));
+            if (currentIndex >= nums.Length)
+            {
+                this.answer.Add(new List<int>(currentSubset));
+                return;
+            }
 
             // include the current index...
             currentSubset.AddLast(nums[currentIndex]);
