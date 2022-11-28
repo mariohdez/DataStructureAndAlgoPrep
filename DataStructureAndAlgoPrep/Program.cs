@@ -9,9 +9,9 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new SortColorsSln();
-            var colros = new int[] { 2,0,2,1,1,0, };
-            test.SortColors(colros);
+            var test = new SubSetsSln();
+            var nums = new int[] { 1,2,3 };
+            test.Subsets(nums);
         }
     }
 }
