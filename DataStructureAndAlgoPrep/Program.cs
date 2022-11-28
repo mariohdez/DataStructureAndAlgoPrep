@@ -9,9 +9,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new SubSetsSln();
-            var nums = new int[] { 1,2,3 };
-            test.Subsets(nums);
+            var test = new LetterCombinationsForPhoneNumbersSln();
+            // var nums = new int[] { 1,2,3 };
+            var res = test.LetterCombinations("23");
+
+            System.Console.WriteLine(res);
         }
     }
 }
