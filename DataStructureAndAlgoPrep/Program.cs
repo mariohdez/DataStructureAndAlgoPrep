@@ -10,23 +10,14 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new AccountsMergeSln();
-            List<IList<string>> accounts = new List<IList<string>>
+            var test = new SpiralOrderSln();
+            var matrix = new int[3][]
             {
-                new List<string>
-                {
-                    "John","johnsmith@mail.com","john_newyork@mail.com",
-                },
-                new List<string>
-                {
-                    "Mary","mary@mail.com",
-                },
-                new List<string>
-                {
-                    "John","johnnybravo@mail.com",
-                },
+                new int[3]{ 1, 2, 3 },
+                new int[3]{ 4, 5, 6 },
+                new int[3]{ 7, 8, 9 },
             };
-            var res = test.AccountsMerge(accounts);
+            var res = test.SpiralOrder(matrix);
 
             System.Console.WriteLine(res);
         }
