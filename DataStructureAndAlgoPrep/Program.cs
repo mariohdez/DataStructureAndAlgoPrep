@@ -11,10 +11,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new TaskSchedulerSln();
-            var tasks = new char[] { 'A', 'A', 'A', 'B', 'B', 'B', };
+            var test = new MinimumOperationsSln();
 
-            var res = test.LeastInterval(tasks, 2);
+            int[] nums = new int[] { 0 };
+
+            var res = test.MinimumOperations(nums);
 
             System.Console.WriteLine(res);
         }
