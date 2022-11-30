@@ -11,14 +11,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new WordSearchSln();
-            var matrix = new char[3][]
-            {
-                new char[4]{ 'a', 'b', 'c', 'e' },
-                new char[4]{ 's', 'f', 'c', 's' },
-                new char[4]{ 'a', 'd', 'e', 'e' },
-            };
-            var res = test.Exist(matrix, "abcced");
+            var test = new TaskSchedulerSln();
+            var tasks = new char[] { 'A', 'A', 'A', 'B', 'B', 'B', };
+
+            var res = test.LeastInterval(tasks, 2);
 
             System.Console.WriteLine(res);
         }
