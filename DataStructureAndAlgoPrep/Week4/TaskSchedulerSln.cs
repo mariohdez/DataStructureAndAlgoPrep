@@ -34,6 +34,7 @@ namespace DataStructureAndAlgoPrep.Week4
                 if (maxHeap.Count != 0)
                 {
                     maxHeap.TryPeek(out var element, out var pri);
+                    maxHeap.Dequeue();
                     pri -= 1;
                     if (pri > 0)
                     {
