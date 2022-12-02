@@ -11,13 +11,14 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new TrapSln();
+            var test = new MedianFinder();
 
-            int[] nums = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+            test.AddNum(3);
+            test.AddNum(2);
+            test.AddNum(7);
+            test.AddNum(4);
 
-            var res = test.Trap(nums);
-
-            System.Console.WriteLine(res);
+            // System.Console.WriteLine(res);
         }
     }
 }
