@@ -68,7 +68,7 @@ namespace DataStructureAndAlgoPrep.Week4
                 level++;
             }
 
-            return level;
+            return 0;
         }
 
         public string GetPatternFromWord(string word, int i)
