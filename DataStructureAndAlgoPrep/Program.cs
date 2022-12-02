@@ -11,12 +11,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new Codec();
+            var test = new TrapSln();
 
-            int[] nums = new int[] { 0 };
-            // "1,2,3,NULL,NULL,4,NULL,NULL,5,NULL,NULL"
+            int[] nums = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
 
-            var res = test.deserialize("1,2,3,NULL,NULL,4,NULL,NULL,5,NULL,NULL");
+            var res = test.Trap(nums);
 
             System.Console.WriteLine(res);
         }
