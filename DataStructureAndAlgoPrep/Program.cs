@@ -11,12 +11,21 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new MedianFinder();
+            /*
+"hot"
+"dog"
+["hot","dog"]
+             */
 
-            test.AddNum(3);
-            test.AddNum(2);
-            test.AddNum(7);
-            test.AddNum(4);
+            var test = new WordLadderSln();
+            test.LadderLength("hot", "dog", new List<string> { "hot", "dog", });
+
+            //var test = new MedianFinder();
+
+            //test.AddNum(3);
+            //test.AddNum(2);
+            //test.AddNum(7);
+            //test.AddNum(4);
 
             // System.Console.WriteLine(res);
         }
