@@ -47,8 +47,6 @@ namespace DataStructureAndAlgoPrep.Week4
                 curNodeOfMergedList = curNode;
             }
 
-
-
             return headOfMergedList;
         }
 
