@@ -4,6 +4,7 @@ using DataStructureAndAlgoPrep.Week1;
 using DataStructureAndAlgoPrep.Week2;
 using DataStructureAndAlgoPrep.Week3;
 using DataStructureAndAlgoPrep.Week4;
+using DataStructureAndAlgoPrep.Week5;
 
 namespace DataStructureAndAlgoPrep
 {
@@ -11,22 +12,18 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new IsValidSudokuSln();
+            var test = new SetZeroesSln();
 
-            char[][] board = new char[9][]
+            int[][] matrix = new int[3][]
             {
-                new char[] {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                new char[] {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                new char[] {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                new char[] {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                new char[] {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                new char[] {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                new char[] {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                new char[] {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                new char[] {'.', '.', '.', '.', '8', '.', '.', '7', '9'},
+                new int[] { -4,-2147483648,6,-7,0 },
+                new int[] { -8,6,-8,-6,0 },
+                new int[] { 2147483647,2,-9,-6,-10 },
             };
 
-            var res = test.IsValidSudoku(board);
+            var res = 0;
+
+            test.SetZeroes(matrix);
 
             Console.WriteLine(res);
         }
