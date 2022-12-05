@@ -11,13 +11,21 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new RotateSln();
-            int[] hi = new int[] { -1, -100, 3, 99 };
-            int k = 2;
+            var test = new MinMeetingRoomsSln();
 
-            test.Rotate(hi, k);
+            int[][] meetings = new int[6][]
+            {
+                new int[]{ 1, 10 },
+                new int[]{ 2, 7 },
+                new int[]{ 3, 19 },
+                new int[]{ 8, 12 },
+                new int[]{ 10, 20 },
+                new int[]{ 11, 30 },
+            };
 
-            Console.WriteLine(hi);
+            int res = test.MinMeetingRooms(meetings);
+
+            Console.WriteLine(res);
         }
     }
 }
