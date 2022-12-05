@@ -11,19 +11,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new MinMeetingRoomsSln();
+            var test = new EncodeWordsSln();
 
-            int[][] meetings = new int[6][]
-            {
-                new int[]{ 1, 10 },
-                new int[]{ 2, 7 },
-                new int[]{ 3, 19 },
-                new int[]{ 8, 12 },
-                new int[]{ 10, 20 },
-                new int[]{ 11, 30 },
-            };
-
-            int res = test.MinMeetingRooms(meetings);
+            var res = test.encode(new List<string> { "Hello", "World" });
+            test.decode("[1,0]");
 
             Console.WriteLine(res);
         }
