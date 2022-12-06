@@ -12,15 +12,17 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[][] matrix = new int[3][]
+            int[][] heights = new int[5][]
             {
-                new int[4]{ 1,   3,  5,  7 },
-                new int[4]{ 10, 11, 16, 20 },
-                new int[4]{ 23, 30, 34, 60 },
+                new int[] { 1,2,2,3,5 },
+                new int[] { 3,2,3,4,4 },
+                new int[] { 2,4,5,3,1 },
+                new int[] { 6,7,1,4,5 },
+                new int[] { 5,1,1,2,4 },
             };
 
-            var test = new SearchMatrixSln();
-            var res = test.SearchMatrix(matrix, 34);
+            var test = new PacificAtlanticSln();
+            var res = test.PacificAtlantic(heights);
 
             Console.WriteLine(res);
         }
