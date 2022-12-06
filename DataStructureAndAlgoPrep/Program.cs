@@ -12,17 +12,17 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[][] heights = new int[5][]
+            char[][] grid = new char[5][]
             {
-                new int[] { 1,2,2,3,5 },
-                new int[] { 3,2,3,4,4 },
-                new int[] { 2,4,5,3,1 },
-                new int[] { 6,7,1,4,5 },
-                new int[] { 5,1,1,2,4 },
+                new char[8] {'X','X','X','X','X','X','X','X'},
+                new char[8] {'X','*','O','X','O','#','O','X'},
+                new char[8] {'X','O','O','X','O','O','X','X'},
+                new char[8] {'X','O','O','O','O','#','O','X'},
+                new char[8] { 'X','X','X','X','X','X','X','X'}
             };
 
-            var test = new PacificAtlanticSln();
-            var res = test.PacificAtlantic(heights);
+            var test = new GetFoodSln();
+            var res = test.GetFood(grid);
 
             Console.WriteLine(res);
         }
