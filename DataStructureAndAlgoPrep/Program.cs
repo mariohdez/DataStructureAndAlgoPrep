@@ -12,18 +12,23 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new SetZeroesSln();
+            // 1->2->3->4->5->6
+            // 1->N
+            ListNode head = new ListNode(1);
+            ListNode two = new ListNode(2);
+            ListNode three = new ListNode(3);
+            ListNode four = new ListNode(4);
+            ListNode five = new ListNode(5);
+            ListNode six = new ListNode(6);
 
-            int[][] matrix = new int[3][]
-            {
-                new int[] { -4,-2147483648,6,-7,0 },
-                new int[] { -8,6,-8,-6,0 },
-                new int[] { 2147483647,2,-9,-6,-10 },
-            };
+            //head.next = two;
+            //two.next = three;
+            //three.next = four;
+            //four.next = five;
+            //five.next = six;
 
-            var res = 0;
-
-            test.SetZeroes(matrix);
+            var test = new OddEvenListSln();
+            var res = test.OddEvenList(head);
 
             Console.WriteLine(res);
         }
