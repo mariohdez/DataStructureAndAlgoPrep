@@ -12,17 +12,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            char[][] grid = new char[5][]
-            {
-                new char[8] {'X','X','X','X','X','X','X','X'},
-                new char[8] {'X','*','O','X','O','#','O','X'},
-                new char[8] {'X','O','O','X','O','O','X','X'},
-                new char[8] {'X','O','O','O','O','#','O','X'},
-                new char[8] { 'X','X','X','X','X','X','X','X'}
-            };
+            int n = 1;
+            int[][] edges = new int[][]{};
 
-            var test = new GetFoodSln();
-            var res = test.GetFood(grid);
+            var test = new GraphValidTreeSln();
+            var res = test.ValidTree(n, edges);
 
             Console.WriteLine(res);
         }
