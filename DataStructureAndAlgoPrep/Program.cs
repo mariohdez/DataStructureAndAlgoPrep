@@ -12,19 +12,16 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int n = 6;
-            int[][] edges = new int[6][]
+            int n = 5;
+            int[][] edges = new int[3][]
             {
-                new int[2] { 0, 5 },
-                new int[2] { 0, 4 },
-                new int[2] { 1, 0 },
-                new int[2] { 2, 0 },
-                new int[2] { 3, 1 },
-                new int[2] { 2, 3 },
+                new int[2] { 0, 1 },
+                new int[2] { 1, 2 },
+                new int[2] { 3, 4 },
             };
 
-            var test = new CourseScheduleIISln();
-            var res = test.FindOrder(n, edges);
+            var test = new CountComponentsSln();
+            var res = test.CountComponents(n, edges);
 
             Console.WriteLine(res);
         }
