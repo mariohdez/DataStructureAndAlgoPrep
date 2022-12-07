@@ -12,16 +12,9 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int n = 5;
-            int[][] edges = new int[3][]
-            {
-                new int[2] { 0, 1 },
-                new int[2] { 1, 2 },
-                new int[2] { 3, 4 },
-            };
 
-            var test = new CountComponentsSln();
-            var res = test.CountComponents(n, edges);
+            var test = new MinKnightMovesSln();
+            var res = test.MinKnightMoves(x: 5, y: 5);
 
             Console.WriteLine(res);
         }
