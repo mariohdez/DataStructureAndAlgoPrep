@@ -46,10 +46,8 @@ namespace DataStructureAndAlgoPrep.Week5
 
                 foreach (int course in prerequisiteCourseGraph[value])
                 {
-                    Console.WriteLine(courseNumberToInDegreeMap[course]);
                     courseNumberToInDegreeMap[course] -= 1;
                     removeEdges++;
-                    Console.WriteLine(courseNumberToInDegreeMap[course]);
 
                     if (courseNumberToInDegreeMap[course] == 0)
                     {
