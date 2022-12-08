@@ -12,9 +12,14 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
+            // [["a"]]
+            var board = new char[][] {
+                new char[] { 'a' },
+            };
 
-            var test = new MinKnightMovesSln();
-            var res = test.MinKnightMoves(x: 5, y: 5);
+            var words = new string[] { "a" };
+            var test = new FindWordsSln();
+            var res = test.FindWords(board, words);
 
             Console.WriteLine(res);
         }
