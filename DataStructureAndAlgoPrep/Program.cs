@@ -12,14 +12,33 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            // [["a"]]
             var board = new char[][] {
                 new char[] { 'a' },
             };
 
-            var words = new string[] { "a" };
-            var test = new FindWordsSln();
-            var res = test.FindWords(board, words);
+            /*
+             * 
+             * 
+             
+             * 
+             * int n, int[][] flights, int src, int dst, int k
+             n = 3, flights = [[],[],[]], src = 0, dst = 2, k = 1
+
+             */
+
+            var test = new FindCheapestPriceSln();
+            var res = test.FindCheapestPrice(
+                n: 3,
+                flights: new int[][]
+                {
+                    new int[] { 0,1,100 },
+                    new int[] { 1,2,100 },
+                    new int[] { 0,2,500 },
+                },
+                src: 0,
+                dst: 2,
+                k: 1);
+
 
             Console.WriteLine(res);
         }
