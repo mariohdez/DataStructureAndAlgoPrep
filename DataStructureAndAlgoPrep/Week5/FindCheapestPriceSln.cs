@@ -28,7 +28,7 @@ namespace DataStructureAndAlgoPrep.Week5
             queue.Enqueue((src, 0));
             int? cheapest = null;
 
-            while (queue.Count != 0)
+            while (queue.Count != 0 || level<=k)
             {
                 numberOfCitiesInLevel = queue.Count;
 
