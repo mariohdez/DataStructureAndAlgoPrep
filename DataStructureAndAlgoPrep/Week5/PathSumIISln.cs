@@ -11,7 +11,7 @@ namespace DataStructureAndAlgoPrep.Week5
         {
             DFS(root, targetSum, 0, new List<int>());
 
-            return null;
+            return this.paths;
         }
 
         private void DFS(TreeNode root, int targetSum, int curSum, IList<int> currentPath)
