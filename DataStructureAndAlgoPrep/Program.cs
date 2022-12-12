@@ -13,12 +13,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            // 9, 5, 4, 3, 2, 1
-            // 1, 3, 5, 4, 3, 2, 1
-            int[] nums = new int[] { 1, 2, 3 };
+            int n = 3;
 
-            var test = new NextPermutationSln();
-            test.NextPermutation(nums: nums);
+            var test = new GenerateParenthesisSln();
+            test.GenerateParenthesis(n: n);
         }
     }
 }
