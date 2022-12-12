@@ -12,16 +12,23 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            /*
-             nums = [1,2,3], k = 3
-             
-             */
-            int[] nums = new int[] { 1, 2, 3 };
-            int k = 3;
+            // [,null,1000000000,null,1000000000,null,1000000000]
+
+            TreeNode root = new TreeNode(1000000000);
+            TreeNode left1 = new TreeNode(1000000000);
+            TreeNode left2 = new TreeNode(294967296);
+            TreeNode left3 = new TreeNode(1000000000);
+            TreeNode left4 = new TreeNode(1000000000);
+            TreeNode left5 = new TreeNode(1000000000);
+
+            root.left = left1;
+            left1.left = left2;
+            left2.left = left3;
+            left3.left = left4;
 
 
-            var test = new SubarraySumSln();
-            var res = test.SubarraySum(nums, k: k);
+            var test = new PathSumIIISln();
+            var res = test.PathSum(root: root, targetSum: 0);
 
             Console.WriteLine(res);
         }
