@@ -13,17 +13,34 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            ListNode one = new ListNode(1);
-            ListNode two = new ListNode(2);
-            ListNode three = new ListNode(3);
-            ListNode four = new ListNode(4);
-            one.next = two;
-            two.next = three;
-            three.next = four;
-            
+            ListNode l1_0 = new ListNode(9);
+            ListNode l1_1 = new ListNode(9);
+            ListNode l1_2 = new ListNode(9);
+            ListNode l1_3 = new ListNode(9);
+            ListNode l1_4 = new ListNode(9);
+            ListNode l1_5 = new ListNode(9);
+            ListNode l1_6 = new ListNode(9);
 
-            var test = new SwapPairsSln();
-            test.SwapPairs(one);
+            l1_0.next = l1_1;
+            l1_1.next = l1_2;
+            l1_2.next = l1_3;
+            l1_3.next = l1_4;
+            l1_4.next = l1_5;
+            l1_5.next = l1_6;
+
+
+            ListNode l2_0 = new ListNode(9);
+            ListNode l2_1 = new ListNode(9);
+            ListNode l2_2 = new ListNode(9);
+            ListNode l2_3 = new ListNode(9);
+
+            l2_0.next = l2_1;
+            l2_1.next = l2_2;
+            l2_2.next = l2_3;
+
+
+            var test = new AddTwoNumbersSln();
+            test.AddTwoNumbers(l1_0, l2_0);
         }
     }
 }
