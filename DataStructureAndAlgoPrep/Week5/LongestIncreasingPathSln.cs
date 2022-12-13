@@ -5,7 +5,6 @@ namespace DataStructureAndAlgoPrep.Week5
 {
     public class LongestIncreasingPathSln
     {
-        private int LongestPath = int.MinValue;
         private int Rows;
         private int Columns;
         private int[][] longestPathsMemo;

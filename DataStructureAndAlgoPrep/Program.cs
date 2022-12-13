@@ -13,10 +13,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int n = 3;
-
-            var test = new GenerateParenthesisSln();
-            test.GenerateParenthesis(n: n);
+            int[] heights = new int[] { 4, 12, 2, 7, 3, 18, 20, 3, 19 };
+            int bricks = 10;
+            int ladders = 2;
+            var test = new FurthestBuildingSln();
+            test.FurthestBuilding(heights, bricks: bricks, ladders: ladders);
         }
     }
 }
