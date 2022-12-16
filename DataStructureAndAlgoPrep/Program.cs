@@ -9,11 +9,9 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[] heights = new int[] { 6, 7, 5, 2, 4, 5, 8, 3 };
-
-            var test = new LargestRectangleAreaSln();
-
-            var res = test.LargestRectangleArea(heights: heights);
+            int[] temperatures = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
+            var test = new DailyTemperaturesSln();
+            var res = test.DailyTemperatures(temperatures);
             Console.WriteLine(res);
         }
     }
