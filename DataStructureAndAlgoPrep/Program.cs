@@ -9,29 +9,20 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var freqStack = new FreqStack();
-            var input = "[4],[0],[9],[3],[4],[2],[],[6],[],[1],[],[1],[],[4],[],[],[],[],[],[]";
+            string encodedString = "abc3[cd]xyz";
 
-            var elements = input.Split(",");
+            var test = new DecodeStringSln();
 
+            var result = test.DecodeString(encodedString);
 
-            foreach (var command in elements)
+            if (string.Equals(result, "abccdcdcdxyz"))
             {
-                if (string.Equals(command, "[]"))
-                {
-                    freqStack.Pop();
-                }
-                else
-                {
-                    var test = String.Join("", command.Split('[', ']'));
-                    Console.WriteLine(test);
-                    if (int.TryParse(test, out var num))
-                    {
-                        freqStack.Push(num);
-                    }
-                }
+                Console.WriteLine("correct");
             }
-
+            else
+            {
+                throw new Exception("wrong got: " + result);
+            }
         }
     }
 }
