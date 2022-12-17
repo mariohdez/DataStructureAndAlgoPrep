@@ -9,11 +9,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[] asteroids = new int[] { 60, 45, 20, -40, -50 };
+            string str = ")()())((()))";
 
-            var test = new AsteroidCollisionSln();
+            var test = new LongestValidParenthesesSln();
 
-            var result = test.AsteroidCollision(asteroids);
+            var result = test.LongestValidParentheses(str);
         }
     }
 }
