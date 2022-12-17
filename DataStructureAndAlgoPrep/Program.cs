@@ -9,20 +9,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            string encodedString = "abc3[cd]xyz";
+            int[] asteroids = new int[] { 60, 45, 20, -40, -50 };
 
-            var test = new DecodeStringSln();
+            var test = new AsteroidCollisionSln();
 
-            var result = test.DecodeString(encodedString);
-
-            if (string.Equals(result, "abccdcdcdxyz"))
-            {
-                Console.WriteLine("correct");
-            }
-            else
-            {
-                throw new Exception("wrong got: " + result);
-            }
+            var result = test.AsteroidCollision(asteroids);
         }
     }
 }
