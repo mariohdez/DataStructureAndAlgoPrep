@@ -11,7 +11,6 @@ public class FindClosestElementsSln
 
         PriorityQueue<int, int> minHeap = new PriorityQueue<int, int>(new DistanceComparer(x));
 
-
         foreach (int coordinate in arr)
         {
             minHeap.Enqueue(coordinate, coordinate);
