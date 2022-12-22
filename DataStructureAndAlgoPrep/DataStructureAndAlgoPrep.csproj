@@ -12,6 +12,7 @@
     <None Remove="Week4\" />
     <None Remove="Week5\" />
     <None Remove="Week6\" />
+    <None Remove="Week7\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Week1\" />
@@ -20,5 +21,6 @@
     <Folder Include="Week4\" />
     <Folder Include="Week5\" />
     <Folder Include="Week6\" />
+    <Folder Include="Week7\" />
   </ItemGroup>
 </Project>
