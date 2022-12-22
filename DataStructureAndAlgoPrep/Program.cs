@@ -10,15 +10,19 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var nums = new List<IList<int>>()
-            {
-                new List<int> { -5,-4,-3,-2,-1,1 },
-                new List<int> { 1,2,3,4,5, },
-            };
+            var test = new WordDictionary();
 
-            var test = new SmallestRangeSln();
-
-            var result = test.SmallestRange(nums);
+            test.AddWord("at");
+            test.AddWord("and");
+            test.AddWord("an");
+            test.AddWord("add");
+            
+            var res = test.Search(".at");
         }
+        /*
+        
+        ["search","search","addWord","search","search","search","search","search","search"]
+        [["a"],[".at"],["bat"],[".at"],["an."],["a.d."],["b."],["a.d"],["."]]
+*/
     }
 }
