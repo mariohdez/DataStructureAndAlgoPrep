@@ -6,7 +6,7 @@ namespace DataStructureAndAlgoPrep.Week8;
 
 public class JobSchedulingSln
 {
-    private readonly int[] memo = new int[5001];
+    private readonly int[] memo = new int[50001];
 
     public int FindNextJob(int[] startTime, int lastEndingTime)
     {
