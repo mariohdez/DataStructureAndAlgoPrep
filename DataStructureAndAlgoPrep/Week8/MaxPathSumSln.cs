@@ -10,7 +10,9 @@ public class MaxPathSumSln
 
     public int MaxPathSum(TreeNode root)
     {
+        MaxPathSumHelper(root);
 
+        return this.maxSum;
     }
 
     public int MaxPathSumHelper(TreeNode root)
