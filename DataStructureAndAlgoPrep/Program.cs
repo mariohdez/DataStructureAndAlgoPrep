@@ -10,19 +10,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            var test = new WordDictionary();
+            var test = new FileSystem();
 
-            test.AddWord("at");
-            test.AddWord("and");
-            test.AddWord("an");
-            test.AddWord("add");
-            
-            var res = test.Search(".at");
+            test.Mkdir("/a/b/c");
+
+            test.AddContentToFile("/a/b/c/d", "Hello!");
         }
-        /*
-        
-        ["search","search","addWord","search","search","search","search","search","search"]
-        [["a"],[".at"],["bat"],[".at"],["an."],["a.d."],["b."],["a.d"],["."]]
-*/
     }
 }
