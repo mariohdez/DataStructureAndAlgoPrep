@@ -11,11 +11,15 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-
-            int[] nums = new int[] { 1 };
-            int k = 1;
-            var test = new MaxSlidingWindowSln();
-            var res = test.MaxSlidingWindow(nums, k);
+            int[][] intervals = new int[][]
+            {
+                new int[] {1, 2},
+                new int[] {2, 3},
+                new int[] {3, 4},
+                new int[] {1, 3},
+            };
+            var test = new EraseOverlapIntervalSln();
+            var res = test.EraseOverlapIntervals(intervals);
         }
     }
 }
