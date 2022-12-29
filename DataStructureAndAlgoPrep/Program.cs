@@ -12,9 +12,10 @@ namespace DataStructureAndAlgoPrep
         static void Main(string[] args)
         {
 
-            int[] nums = new int[] { 3, 30, 34, 5, 9 };
-            var test = new LargestNumberSln();
-            var res = test.LargestNumber(nums);
+            int[] nums = new int[] { 1 };
+            int k = 1;
+            var test = new MaxSlidingWindowSln();
+            var res = test.MaxSlidingWindow(nums, k);
         }
     }
 }
