@@ -11,13 +11,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            // [[[1,3],[6,7]],
-            // [[2,4]],
-            // [[2,5],[9,12]]]
-            var str = "AABABBA";
-            int k = 1;
-            var test = new LongestRepeatingCharacterReplacementSln();
-            var res = test.CharacterReplacement(str, k);
+
+            int[] nums = new int[] { 3, 30, 34, 5, 9 };
+            var test = new LargestNumberSln();
+            var res = test.LargestNumber(nums);
         }
     }
 }
