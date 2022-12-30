@@ -11,15 +11,11 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[][] intervals = new int[][]
-            {
-                new int[] {1, 2},
-                new int[] {2, 3},
-                new int[] {3, 4},
-                new int[] {1, 3},
-            };
-            var test = new EraseOverlapIntervalSln();
-            var res = test.EraseOverlapIntervals(intervals);
+            int[] nums = new int[] {-1, 2, 1, -4};
+            int target = 1;
+
+            var test = new ThreeSumClosestSln();
+            var res = test.ThreeSumClosest(nums, target);
         }
     }
 }
