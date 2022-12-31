@@ -68,7 +68,7 @@ public class SolveSudokuSln
         }
         else
         {
-            for (int d = 0; d < 9; ++d)
+            for (int d = 1; d < 10; ++d)
             {
                 int box_id = (i / 3) * 3 + j / 3;
 
