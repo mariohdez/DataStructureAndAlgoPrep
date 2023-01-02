@@ -12,10 +12,13 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[] {3,1,2};
+            int[][] routes = new int[][] {
+                new int[] { 1, 2, 7 },
+                new int[] { 3, 6, 7 },
+            };
 
-            var test = new FindMinSln();
-            var res = test.FindMin(nums);
+            var test = new NumBusesToDestinationSln();
+            var res = test.NumBusesToDestination(routes, source: 6, target: 7);
         }
     }
 }
