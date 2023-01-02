@@ -4,6 +4,7 @@ using DataStructureAndAlgoPrep.Week1;
 using DataStructureAndAlgoPrep.Week6;
 using DataStructureAndAlgoPrep.Week7;
 using DataStructureAndAlgoPrep.Week8;
+using DataStructureAndAlgoPrep.Week9;
 
 namespace DataStructureAndAlgoPrep
 {
@@ -11,11 +12,10 @@ namespace DataStructureAndAlgoPrep
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[] {-1, 2, 1, -4};
-            int target = 1;
+            int[] nums = new int[] {3,1,2};
 
-            var test = new ThreeSumClosestSln();
-            var res = test.ThreeSumClosest(nums, target);
+            var test = new FindMinSln();
+            var res = test.FindMin(nums);
         }
     }
 }
